@@ -17,5 +17,8 @@ module.exports = {
     },
   },
   plugins: [],
+  corePlugins : {
+     borderOpacity: true,
+  }
 }
 
