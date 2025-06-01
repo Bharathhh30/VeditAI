@@ -59,7 +59,7 @@ const InitialLayout = () => {
   }, [fontsLoaded]);
 
   useEffect(() => {
-    console.log("User:", user);
+    // console.log("User:", user);
   }, [user]);
   const colorScheme = useColorScheme();
 
