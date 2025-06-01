@@ -9,7 +9,8 @@
       ],
       "~/*": [
         "./*"
-      ]
+      ],
+      "@/convex/*": ["convex/*"],
     }
   },
   "include": [
@@ -20,3 +21,11 @@
     "nativewind-env.d.ts"
   ]
 }
+
+
+/*
+  Why that paths ?
+  - `@/*` is used to import from the `src` directory, allowing for cleaner imports like `import { MyComponent } from '@/components/MyComponent'`.
+  - `~/*` is used to import from the root directory, which can be useful for importing files that are not in the `src` directory.
+  - `@/convex/*` is used to import from the `convex` directory, allowing for cleaner imports like `import { MyConvexFunction } from '@/convex/myConvexFunction'`.
+*/
