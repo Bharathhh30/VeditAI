@@ -71,13 +71,14 @@ const login = () => {
   const signInWithEmail = async() => {
     try{
       setLoading('email')
+      setEmailAtom(email);
       const signInAttempt = await signIn?.create({
         strategy: 'email_code',
         identifier: email,
       })
       console.log("signInAttempt",signInAttempt,"i entered here");
       router.push('/verify?isLogin=true')
-
+      
     }catch(err){
       console.log("email : ",email)
       console.log(err,"i am herw")
